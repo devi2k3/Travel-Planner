@@ -1,0 +1,104 @@
+:root 
+{
+    --PrimaryColor: hsl(188, 93%, 50%);
+    --HoverColor: hsl(183, 74%, 56%);
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(0, 0%, 18%);
+    --textColor: hsl(240, 1%, 48);
+    --whiteColorDeam: hsl(0.0%, 93%);
+    --grayBg: hsl(0, 0%, 96%);
+    --grayText: rgb(190, 190, 190);
+    --inputColor: hsl(330, 12%, 97%);
+    --boxShadow:box-shadow: 0 2px 8px 2px rgba(178, 178,178,0.189);
+}
+
+
+.footer {
+    background: var(--grayBg);
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center the items horizontally */
+}
+
+.secContainer {
+    gap: 1.5rem;
+    text-align: center;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; /* Center content within the container */
+
+    .footerLogo {
+        padding-bottom: .5rem;
+
+        .logo {
+            color: var(--blackColor);
+            font-weight: 500;
+            cursor: pointer;
+            display: flex; /* Ensure the icon and text are aligned */
+            align-items: center;
+            justify-content: center;
+
+            .icon {
+                font-size: 25px;
+                color: rgb(237, 224, 45);
+                margin-right: .5rem;
+            }
+        }
+    }
+
+    .socials {
+        gap: .5rem;
+        margin: auto;
+        display: flex; /* Ensure social icons are aligned */
+        justify-content: center;
+        align-items: center; /* Center items vertically */
+
+        .icon {
+            font-size: 30px;
+            background: var(--PrimaryColor);
+            border-radius: 50%;
+            padding: 8px;
+            color: var(--whiteColor);
+            cursor: pointer; /* Make icons clickable */
+            transition: background 0.3s ease;
+
+            &:hover {
+                background: var(--blackColor);
+            }
+        }
+    }
+}
+
+.footerLinks {
+    display: flex;
+    flex-direction: column; /* Arrange footer links vertically */
+    align-items: center; /* Center the links horizontally */
+    row-gap: .2rem;
+    text-align: center;
+    margin-top: 1rem; /* Add some space between the sections */
+
+    .linkTitle {
+        padding-bottom: .5rem;
+        color: var(--blackColor);
+        font-weight: 700;
+    }
+
+    li {
+        list-style: none;
+        margin: 0.5rem 0; /* Add spacing between the list items */
+        transition: transform 0.3s ease;
+
+        a {
+            text-decoration: none; /* Remove underline from links */
+            color: var(--textColor);
+            font-weight: 500;
+        }
+
+        &:hover {
+            color: var(--PrimaryColor);
+            transform: translateX(10px);
+        }
+        
+    }
+}

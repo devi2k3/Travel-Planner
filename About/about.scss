@@ -1,0 +1,103 @@
+:root 
+{
+    --PrimaryColor: hsl(188, 93%, 50%);
+    --HoverColor: hsl(183, 9%, 42%);
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(0, 0%, 18%);
+    --textColor: hsl(240, 1%, 48);
+    --whiteColorDeam: hsl(0.0%, 93%);
+    --grayBg: hsl(0, 0%, 96%);
+    --grayText: rgb(190, 190, 190);
+    --inputColor: hsl(330, 12%, 97%);
+    --boxShadow:box-shadow: 0 2px 8px 2px rgba(178, 178,178,0.189);
+}
+
+.about{
+    .secContainer{
+        .title{
+            color:var(--blackColor);
+            line-height: 1.5rem;
+            padding-bottom: 2rem;
+            text-align: center;
+            font-size: 1.5rem;
+            
+        }
+        .mainContent{
+            gap: 2rem;
+            .singleItem{
+                text-align: center;
+
+                img{
+                    background: rgba(255, 255, 255, 0.265);
+                    width: 100px;
+                    border-radius: 50%;
+                    padding: 1rem;
+
+                }
+
+                h3{
+                    font-weight: 700;
+                    color: var(--blackColor);
+                    padding: .5rem;
+
+                }
+
+                p{
+                    font-size: 13px;
+                    font-weight: 500;
+                    padding-bottom: .5rem;
+                    color: var(--textColor);
+
+
+                }
+            }
+        }
+        .videoCard{
+            margin: 2rem;
+            background: linear-gradient(to top,rgb(246, 243, 243),rgba(0,0,0,0.609)),url('C:/Users/91888/travel_planner/src/Asserts/map.jpg');
+            background-position: center;
+            background-size:cover ;
+            background-repeat: no-repeat;
+
+
+            .cardContent{
+                gap:2rem;
+                padding:2rem 1rem;
+
+                .cardText{
+                    h2{
+                        color: var(--whiteColor);
+                        font-weight: 600;
+                        padding-bottom: 1rem;
+
+                    }
+                    
+                    p{
+                        color:var(--whiteColor);
+                        opacity:.7;
+                        font-size: 12px;
+                        font-weight: 400;
+                        letter-spacing: 1px;
+                    }
+                }
+            }
+            .cardvideo{
+                border: 3px solid rgb(185, 227, 235);
+                border-bottom: 3px solid rgba(158, 6, 175, 0.841);
+                box-shadow: 3px solid rgba(46, 44, 46, 0.841);
+                height: 200px;
+                width: 100%;
+                border-radius: 10px;
+                overflow: hidden;
+
+                video{
+                    height: 100%;
+                    width:100%;
+                    object-fit: cover;
+                }
+            }
+        }
+
+
+    }
+}
